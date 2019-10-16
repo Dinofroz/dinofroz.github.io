@@ -3,9 +3,9 @@
 
 
 @font-face {
-    font-family: 'youth_fury_personal_useRg';
-    src: url('youthfurypersonaluse-zmea-webfont.woff2') format('woff2'),
-         url('youthfurypersonaluse-zmea-webfont.woff') format('woff');
+    font-family: 'youthfury';
+    src: url('/font/youthfurypersonaluse-zmea-webfont.woff2') format('woff2'),
+         url('/font/youthfurypersonaluse-zmea-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
