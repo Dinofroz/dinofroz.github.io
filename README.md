@@ -1,4 +1,9 @@
 # dinofroz.github.io
 
 It's Dinofroz.
-/Dinofroz
+-Din
+-o
+-froz
+-dinofroz
+-
+#dinofroz
