@@ -1,9 +1,7 @@
 # dinofroz.github.io
-
-It's Dinofroz.
--Din
--o
--froz
--dinofroz
--
-#dinofroz
+***
+## di
+### no
+#### fr
+##### o
+###### z
