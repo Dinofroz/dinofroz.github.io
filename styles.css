@@ -1,5 +1,12 @@
-a {
-    color: #000080;
+body {
+	padding-left: 13em;
+	color: white;
+	background-color: #363636
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachement: fixed;
+	overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 header {
@@ -8,6 +15,10 @@ header {
 	font-size: 25px;
 	color: white;
 	padding: 5px;
+}
+
+a {
+    color: #000080;
 }
 
 section {
@@ -27,17 +38,6 @@ footer {
 	text-align: center;
 	color: white;
 	border-radius: 3px;
-}
-
-body {
-	padding-left: 13em;
-	color: white;
-	background-image: repeating-linear-gradient(to bottom left, #4286f4, #1a6ef4);
-	background-position: top center;
-	background-repeat: no-repeat;
-	background-attachement: fixed;
-	overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 article.picture {
