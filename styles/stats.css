@@ -94,7 +94,7 @@ img.logo {
 	width: 8.5em;	
 }
 
-a {
+a, a:visited {
     font-family: Helvetica;
 	color: #212121;
 	text-decoration: none;
