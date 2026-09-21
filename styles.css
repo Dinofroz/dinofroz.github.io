@@ -8,7 +8,7 @@
 
 body {
 	color: #212121;
-	background-image: url("grad-bg2.jpg");
+	background: #0f2439 url("grad-bg2.jpg");
 	background-size: cover;
 	background-position: top center;
 	background-repeat: no-repeat;
