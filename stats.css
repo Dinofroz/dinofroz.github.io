@@ -1,0 +1,125 @@
+/*@font-face {
+    font-family: 'pirates';
+    src: url('/fonts/?.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+
+body {
+	color: #212121;
+	background: #0f2439;
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+h1 {
+	text-align: center;
+	font-family: Candara, Geneva, Arial;
+	font-size: 40px;
+}
+
+h2 {
+	text-align: left;
+	padding-left: 10px;
+	font-family: Candara;
+	color: black;
+}
+	
+h3{
+	text-align: left;
+	padding-left: 10px;
+	font-size: 20;
+	font-family: Helvetica;
+}
+
+p {
+	padding-left: 10px;
+	font-family: Helvetica;
+}
+
+div.container {
+	padding: 10px;
+	padding-left: 1em;
+	padding-right: 1em;
+	background: rgba(206,212,218,0.65);
+	border-radius: 10px;
+}
+
+div.container, footer {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+section {
+	display: -webkit-flex;
+	display: flex;
+	padding: 3px;
+	margin: 10px;
+	border-width: medium;
+	border-color: White;
+	border-radius: 7px;
+	border-style: solid;
+}
+
+article.picture {
+	background: white;
+	padding: 10px;
+}
+
+article.info {
+	background: white;
+	flex: 3;
+	padding: 10px;
+	opacity: .6;
+	border-radius: 3px;
+}
+
+footer {
+	background: rgba(222,216,216,0.65);
+	padding: 1px;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 10px;
+	border-radius: 10px;
+}
+
+img.logo {
+	padding: 1em;
+	left: 2.5em; 
+	width: 8.5em;	
+}
+
+a {
+    font-family: Helvetica;
+	color: #212121;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+button {
+    width: 60px;
+    height: 25px;
+    border: 2px dotted navy;
+    color: #000080;
+    border-radius: 6px;
+    background-color: #4286f4;
+
+}
+
+button:hover {
+    width: 62px;
+    height: 27px;
+    border: 2px dotted navy;
+    color: #000080;
+    border-radius: 6px;
+    background-color: #0286f4;
+}
+      
