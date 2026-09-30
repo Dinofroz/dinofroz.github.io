@@ -158,5 +158,7 @@ footer {
 	margin: 15px;
 	text-align: center;
 	font-size: 10pt;
-
+	animation-name: fadeIn2;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
 }
