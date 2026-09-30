@@ -1,17 +1,24 @@
 @font-face {
     font-family: 'Lato';
-    src: url("/font/Lato.woff2") format('woff2');
+    src: url("Lato.woff2") format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
+@keyframes fadeIn {
+	from {transform: translate(0em, 5em); opacity: 0%;}
+	to {transform: translate(0em, 0em); opacity: 100%;}
+}
+
 body {
-    background: #ffffff url("/img/bg.png");
+    background: #ffffff url("img/bg.png");
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
     overflow: hidden;
+	font-family: Lato;
+	color: white;
 }
 
 .container {
@@ -21,10 +28,24 @@ body {
 	height: 100vh;
 }
 
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30vh;
+	
+}
+
 .title {
-	width: 100%;
 	text-align: center;
 	margin-bottom: 1vh;
+	animation-name: fadeIn;
+	animation-duration: 0.6s;
+}
+
+.content {
+	background-color: white;
+	color: black;
 }
 
 h1 {
@@ -35,11 +56,6 @@ h1 {
 	text-align: center;
 	margin-bottom: 10px;
 	margin-top: 0px;
-}
-
-p {
-	font-family: Lato;
-	color: white;
 }
 
 a {
