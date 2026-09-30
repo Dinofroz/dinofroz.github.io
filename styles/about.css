@@ -44,11 +44,13 @@ nav {
 	width: 100%;
 	height: 5em;
 	background: rgb(33,33,33,0);
-	transition: background 0.3s, box-shadow 0.3s, height 0.3s, padding-top 0.3s;
 	padding-top: 9px;
-	animation-name: fadeIn2;
-	animation-duration: 0.75s;
+	transition: background 0.3s, box-shadow 0.3s, height 0.3s, padding-top 0.3s;
+	animation-name: fadeIn1;
+	animation-duration: 0.5s;
 	animation-timing-function: ease-in-out;
+	animation-fill-mode: backwards;
+	animation-delay: 0.25s;
 }
 
 nav ul{
@@ -67,7 +69,7 @@ nav a {
 	border-width: 2px;
 	border-color: rgba(0,0,0,0);
 	color: rgb(250,250,250);
-	transition: color 0.3s, border-color 0.3s, font-weight 0.3s;
+	transition: color 0.3s, border-color 0.3s
 }
 
 nav li {
@@ -78,10 +80,10 @@ nav li {
 /* Stuff that happens on scroll or hover */
 nav.scrolled {
 	height: 4em;
+	padding-top: 0px;
 	background: rgba(33,33,33,1);
 	box-shadow: -3px 5px 20px rgba(43,42,42,0.85);
 	transition: background 0.3s, box-shadow 0.4s, height 0.3s, padding-top 0.3s;
-	padding-top: 0px;
 }
 
 nav.scrolled a {
@@ -89,7 +91,6 @@ nav.scrolled a {
 	transition: border-color 0.3s, background-color: 0.3s;
 	color: rgb(200,200,200);
 	transition: color 0.3s, text-decoration 0.3s, font-weight 0.3s;
-	font-weight: 200;
 }
 
 nav a:hover {
@@ -152,13 +153,15 @@ h1 {
 	animation-name: fadeIn2;
 	animation-duration: 1s;
 	animation-timing-function: ease-in-out;
+	animation-fill-mode: backwards;
 }
 
 footer {
 	margin: 15px;
 	text-align: center;
 	font-size: 10pt;
-	animation-name: fadeIn2;
+	animation-name: fadeIn1;
 	animation-duration: 1s;
 	animation-timing-function: ease-in-out;
+	animation-fill-mode: backwards;
 }
