@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Lato';
-    src: url("Lato.woff2") format('woff2');
+    src: url("/font/Lato.woff2") format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,7 +17,7 @@
 }
 
 body {
-    background: #ffffff url("img/bg.png");
+    background: #ffffff url("/img/bg.png");
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
