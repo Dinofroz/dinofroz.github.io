@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="about.css">
+    <title>About</title>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const nav = document.getElementById('navbar');
+			function onScroll() {
+				if (window.scrollY > 60) {
+					nav.classList.add('scrolled');
+				} else {
+					nav.classList.remove('scrolled');
+				}
+			}
+			window.addEventListener('scroll', onScroll, { passive: true });
+		});
+	</script>
+</head>
+<body>
+	<nav id="navbar">
+		<ul>
+			<a href="index.html"><li>Home</li></a>
+			<a href="index.html"><li>Stats</li></a>
+			<a href="index.html"><li>Pirates</li></a>
+			<a href="index.html"><li>Photos</li></a>
+		</ul>
+	</nav>
+	<header>
+		<div class="title">
+			<h1>About Me</h1>
+		</div>
+	</header>
+	<div class="content">
+		<p>	Hello there! My name is bee bee boo boo bah</p>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><p>hello there</p>
+	</div>
+	<footer>
+		<p>Copyright © 2026 by Eli Glende | Last updated 9/29/26</p>
+	</footer>
+</body>
+</html>
