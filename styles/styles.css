@@ -31,14 +31,6 @@ body {
 	height: 100vh;
 }
 
-header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 30vh;
-	
-}
-
 .title {
 	text-align: center;
 	margin-bottom: 1vh;
