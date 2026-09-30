@@ -5,9 +5,21 @@
     font-style: normal;
 }
 
+@keyframes fadeIn1 {
+	from {transform: translate(0em, 0.4em); opacity: 0%;}
+	to {transform: translate(0em, 0em); opacity: 100%;}
+}
+
+@keyframes fadeIn2 {
+	0% {transform: translate(0em, 0.4em); opacity: 0%;}
+	30% {transform: translate(0em, 0.4em); opacity: 0%;}
+	100% {transform: translate(0em, 0em); opacity: 100%;}
+}
+
 body {
     background: url("/img/bg.png");
 	background-attachment: fixed;
+	background-size: cover;
     overflow-x: hidden;
 	margin: 0px;
 	color: rgb(50,50,50);
@@ -34,6 +46,9 @@ nav {
 	background: rgb(33,33,33,0);
 	transition: background 0.3s, box-shadow 0.3s, height 0.3s, padding-top 0.3s;
 	padding-top: 9px;
+	animation-name: fadeIn2;
+	animation-duration: 0.75s;
+	animation-timing-function: ease-in-out;
 }
 
 nav ul{
@@ -95,6 +110,7 @@ nav.scrolled a:hover {
 	
 header {
 	background: #ffffff url("/img/bg.png");
+	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -104,6 +120,9 @@ header {
 .title {
 	text-align: center;
 	margin-bottom: 1vh;
+	animation-name: fadeIn1;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
 }
 
 h1 {
@@ -130,6 +149,9 @@ h1 {
 	background-color: white;
 	font-size: 14pt;
 	box-shadow: -3px 5px 20px rgba(50,50,50,0.7);
+	animation-name: fadeIn2;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
 }
 
 footer {
