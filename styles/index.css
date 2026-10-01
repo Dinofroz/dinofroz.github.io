@@ -35,6 +35,8 @@ h1 {
 	font-weight: 300;
 	color: white;
 	font-size: 64pt;
+	letter-spacing:5px; 
+	font-variant: small-caps;
 	text-align: center;
 	margin-bottom: 10px;
 	margin-top: 0px;
