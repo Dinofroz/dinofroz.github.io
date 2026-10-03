@@ -12,6 +12,19 @@ body {
     overflow-x: hidden;
 }
 
+div.container {
+	padding: 10px;
+	padding-left: 1em;
+	padding-right: 1em;
+	background: rgba(206,212,218,0.65);
+	border-radius: 10px;
+}
+
+div.container, footer {
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+
 h1 {
 	text-align: center;
 	font-family: Candara, Geneva, Arial;
@@ -35,19 +48,6 @@ h3{
 p {
 	padding-left: 10px;
 	font-family: Helvetica;
-}
-
-div.container {
-	padding: 10px;
-	padding-left: 1em;
-	padding-right: 1em;
-	background: rgba(206,212,218,0.65);
-	border-radius: 10px;
-}
-
-div.container, footer {
-	margin-left: 10%;
-	margin-right: 10%;
 }
 
 article {
