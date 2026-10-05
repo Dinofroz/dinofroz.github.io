@@ -44,6 +44,7 @@ a#mobile {
 	a#mobile { display: none; }
 	h1 { margin: 0.5em; }
 	.container { padding: 24px; }
+	article { margin: 10px; }
 }
 
 h1 {
@@ -76,12 +77,6 @@ article {
 	border-color: White;
 	border-radius: 7px;
 	border-style: solid;
-}
-
-@media screen and (min-width: 767px) {
-	article {
-		margin: 10px;
-	}
 }
 
 div.inner {
@@ -135,7 +130,19 @@ section.image {
 	grid-column-end: 3;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 767px) {
+	.image img {
+		width: 70vw;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.image img {
+		width: 60vw;
+	}
+}
+
+@media screen and (min-width: 1200px) {
 	#c {
 		grid-column-start: 1;
 		grid-column-end: 2;
@@ -149,7 +156,7 @@ section.image {
 	}
 }
 
-@media screen and (min-width: 1060px) {
+@media screen and (min-width: 1200px) {
 	#a {
 		display: block;
 	}
