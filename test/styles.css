@@ -37,24 +37,47 @@ body {
 }
 
 div.container {
-    max-width: 1240px;
     margin-top: 10px;
 	margin-bottom: 10px;
 	background: rgba(206,212,218,0.65);
-    padding: 10px 1em;
+    padding: 0;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 div.container, footer {
-	margin-left: 10vw;
-	margin-right: 10vw;
+	margin-inline: 5vw;
+}
+
+a#desktop {
+	display: none;
+	color: #212121;
+}
+
+a#mobile {
+	padding: 10px;
+	display: block;
+	color: #d0d5da;
+	position: absolute;
+	top: 0;
+}
+	
+@media screen and (min-width: 767px) {
+	div.container, footer { margin-inline: 10vw; }
+	div.container { padding: 10px 1em; }
+	a#desktop { display: block; }
+	a#mobile { display: none; }
+	h1 { margin: 0.5em; }
+	.container { padding: 24px; }
 }
 
 h1 {
+	margin: 0.25em;
+	padding: 0.25em;
 	text-align: center;
 	font-family: Candara, Geneva, Arial;
-	font-size: 2.5rem;
+	font-size: 30pt;
+	color: #d0d5da;
 }
 
 h2 {
@@ -73,11 +96,17 @@ h3{
 
 article {
 	padding: 3px;
-	margin: 10px;
+	margin-bottom: 10px;
 	border-width: medium;
 	border-color: White;
 	border-radius: 7px;
 	border-style: solid;
+}
+
+@media screen and (min-width: 767px) {
+	article {
+		margin: 10px;
+	}
 }
 
 div.inner {
@@ -85,7 +114,6 @@ div.inner {
 	grid-template-columns: 1.7fr 0.2fr;
 	background: rgba(255,255,255,0.6);
 	border-radius: 3px;
-
 }
 
 div.row {
@@ -93,20 +121,19 @@ div.row {
 	display: flex;
 }
 
-section.info {
-	flex: 3;
+section.text {
 	padding: 10px;
 }
 
-.info h2 {
+.text h2 {
 	color: #525456;
 }
 
-.info h3, p {
+.text h3, p {
 	color: #686a6d;
 }
 
-section.picture {
+section.image {
 	display: flex;
 	padding: 10px;
 	align-items: center;
@@ -116,8 +143,8 @@ section.picture {
 	grid-column-end: 3;
 }
 
-.picture img {
-	width: 50vw;
+.image img {
+	width: 75vw;
 }
 
 #a {
@@ -138,11 +165,11 @@ section.picture {
 		grid-column-start: 1;
 		grid-column-end: 2;
 	}
-	section.picture {
+	section.image {
 		grid-row-start: 1;
 		grid-column-start: 2;
 	}
-	.picture img {
+	.image img {
 		width: 30vw;
 	}
 }
@@ -169,10 +196,6 @@ a {
 
 a:hover {
 	text-decoration: underline;
-}
-@media (max-width: 600px) {
-    h1 { font-size: 2.4rem; }
-    .container { padding: 24px; }
 }
 
 .buttons {
