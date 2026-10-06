@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Lato';
-    src: url("/font/Lato.woff2") format('woff2');
+    src: url("Lato.woff2") format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,7 +11,7 @@
 }
 
 body {
-    background: #ffffff url("/img/bg.png");
+    background: #ffffff url("img/bg.png");
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -33,24 +33,40 @@ body {
 h1 {
 	font-family: Lato;
 	font-weight: 300;
+	letter-spacing: 5px;
 	color: white;
-	font-size: 64pt;
+	font-size: 35pt;
 	letter-spacing:5px; 
-	font-variant: small-caps;
+	text-transform: uppercase;
+	font-variant: initial;
 	text-align: center;
 	margin-bottom: 10px;
-	margin-top: 0px;
+	margin-top: 0;
 	animation-name: fadeIn;
 	animation-duration: 0.5s;
 	animation-timing-function: ease-in-out;
 }
 
+@media screen and (min-width: 650px) {
+	h1 { 
+		font-variant: small-caps;
+		text-transform: capitalize;
+		font-size: 64pt;
+	}	
+	
+	a {
+		font-size: medium;
+	}
+}
+
 p {
+	font-size: 11pt;
 	animation-name: fadeIn;
 	animation-duration: 0.5s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: backwards;
 	animation-delay: 0.25s;
+	color: white;
 }
 
 a {
