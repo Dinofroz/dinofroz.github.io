@@ -154,14 +154,11 @@ section.image img {
 	}
 
 	@media screen and (min-width: 1200px) {
+		#a { display: block; }
+		#b { display: none; }
 		#c { grid-column-start: 1; grid-column-end: 2; }
 		section.image { grid-row-start: 1; grid-column-start: 2; }
 		section.image img { width: 35vw; }
-	}
-
-	@media screen and (min-width: 1200px) {
-		#a { display: block; }
-		#b { display: none; }
 	}
 
 footer {
