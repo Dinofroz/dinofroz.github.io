@@ -11,7 +11,6 @@ function submitForm(event) {
 		method: 'POST',
 		body: formData
 	})
-	
 	.catch(error => {
 		console.error('Error:', error);
 	});
