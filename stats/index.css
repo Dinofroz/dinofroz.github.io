@@ -133,6 +133,7 @@ div.inner {
 	@media screen and (min-width: 992px) {
 		.desktop { display: block; }
 		.mobile { display: none; }
+		section.image { grid-row-start: 1; grid-column-start: 2; }
 		section.text img { width: 35vw; float: right; }
 	}
 
