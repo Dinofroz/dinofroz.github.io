@@ -12,10 +12,10 @@ function submitForm(event) {
 		body: formData
 	})
 	// Display response from the server
-	.then(response => response.text())
-	.then(data => {
-		document.getElementById('responseMessage').innerText = data;
-	})
+	//.then(response => response.text())
+	//.then(data => {
+	//	document.getElementById('responseMessage').innerText = data;
+	//})
 	.catch(error => {
 		console.error('Error:', error);
 	});
