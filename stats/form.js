@@ -12,6 +12,10 @@ function submitForm(event) {
 		body: formData
 	})
 	.catch(error => {
-		console.error('Error:', error);
+	console.error('Error:', error);
 	});
+	
+	// Update success message
+	document.getElementById('success').innerText = 'Thank you!';
+	
 }
