@@ -20,6 +20,7 @@ body {
     background: url("/img/bg.png");
 	background-attachment: fixed;
 	background-size: cover;
+	background-repeat: repeat-y;
     overflow-x: hidden;
 	margin: 0px;
 	color: rgb(50,50,50);
@@ -57,6 +58,12 @@ nav ul{
 	list-style-type: none;
 	display: flex;
 	margin-top: 6px;
+	justify-content: center;
+	padding-left: 0;
+}
+
+@media screen and (min-width: 767px){
+	nav ul { justify-content: left; padding-left: 40px;}
 }
 
 nav a {
@@ -111,16 +118,16 @@ nav.scrolled a:hover {
 	
 header {
 	background: #ffffff url("/img/bg.png");
+	background-attachment: fixed;
 	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 60vh;
-}
-
+	height: 40vh;
+}	
+	
 .title {
 	text-align: center;
-	margin-bottom: 1vh;
 	animation-name: fadeIn1;
 	animation-duration: 0.5s;
 	animation-timing-function: ease-in-out;
@@ -130,10 +137,15 @@ h1 {
 	font-family: Lato;
 	font-weight: 300;
 	color: white;
-	font-size: 64pt;
+	font-size: 50pt;
 	text-align: center;
-	margin-bottom: 10px;
-	margin-top: 0px;
+	margin: 0px;
+}
+
+@media screen and (min-width: 767px){
+	h1 { font-size: 64pt; }
+	header { height: 60vh; }
+	.title { margin-bottom: 1.5vh; }
 }
 
 
