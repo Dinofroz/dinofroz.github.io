@@ -6,47 +6,126 @@
 		<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="/styles/stats.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="/form.js"></script>
 	</head>
 	<body>
-		<a href="/" class="back" id="mobile">‹ Go Back</a>
-		<h1>On-campus Experiments</h1>
+		<a href="/" class="back mobile">‹ Go Back</a>
+		<div class="title">
+			<h1>On-campus Experiments</h1>
+		</div>
 		<div class="main container">
-			<a href="/" class="back" id="desktop">‹ Go Back</a>
+			<a href="/" class="back desktop">‹ Go Back</a>
 			<article>
 				<div class="inner">
-					<section class="text" id="c">
+					<section class="text">
 						<h2>Numbers from 1-10</h2>
+						<img src="/img/stats/all_data.png" class="desktop">
 						<h3>Are some numbers picked more frequently than others?</h3>
-						<p>If you are asked to pick a random number from 1 to 10, you might think you are choosing randomly,
-							but studies have shown that there may be some numbers that come to mind more readily. We were curious
-							whether we would observe this among students at USU, so we asked 130 people on campus to
-							choose a random number from 1-10. This chart demonstrates the results.</p>
-						<p id="a">I expected to find that 7 was the most commonly answered number, but instead discovered 
-							that the most common number was 3.</p>
+						<p>
+							If you are asked to pick a random number from 1 to 10, you might think you are choosing randomly,
+							but studies have shown that there may be some numbers that come to mind more readily. We were 
+							curious whether we would observe this among students at USU, so we asked 130 people on campus to
+							choose a random number from 1-10. This chart demonstrates the results.
+						</p>
+						<div class="desktop">
+							<p>
+								I expected to find that 7 was the most commonly answered number, but was surprised to discover 
+								that the most common was in fact 3. It was also interesting to see the shape of this chart, 
+								with similarly shaped peaks at 3 and 7. Why did so few people choose 1, 5, and 10? And what 
+								makes 2, 4, 6, and 8 slightly more common?
+							</p>
+							<p>
+								Surprisingly, only one person out of all 130 answered with the number 1.The p-value for that 
+								result is just 0.0002, meaning that there is essentially zero likelihood of that happening only 
+								by chance. I am curious what the cause of that is, along with all of the other patterns in this 
+								data.
+							</p>
+						</div>
+						<div class="mobile">
+							<span class="center">
+								<img src="/img/stats/all_data.png">
+							</span>
+							<p>
+								I expected to find that 7 was the most commonly answered number, but was surprised to discover 
+								that the most common was in fact 3. It was also interesting to see the shape of this chart, 
+								with similarly shaped peaks at 3 and 7. Why did so few people choose 1, 5, and 10?
+							</p>
+							<p>
+								Surprisingly, only one person out of all 130 answered with the number 1.The p-value for that 
+								result is 0.0002, meaning that there is essentially zero likelihood of that happening just by 
+								chance.
+							</p>
+						</div>
 					</section>
-					<section class="image">
-						<img src="/img/stats/all_data.png">
+					<section class="text">
+						<p>
+							I also recorded the gender of each respondent (male or female), in order to try and discover whether 
+							a person's gender had an influence on which number they were more likely to pick. Here are the 
+							results from 57 men and 52 women:
+						</p>
+						<div class="desktop">
+							<span class="center">
+								<img src="/img/stats/mens_choices.png">
+								<img src="/img/stats/womens_choices.png">
+							</span>
+						</div>
+						<div class="mobile">
+							<span class="center">
+								<img src="/img/stats/womens_choices.png">
+							</span>
+							<span class="center">
+								<img src="/img/stats/mens_choices.png">
+							</span>
+						</div>
+						<p>
+							Interestingly, guys apparently choose 7 most often, and girls choose 3 most often. I wasn't expecting 
+							there to be any difference between the two genders, but as it turns out, there was actually a slight 
+							difference. I would probably need to collect a lot more data to really find out whether this difference 
+							is real, or if it was just a fluke.
+						</p>
 					</section>
-					<section id="b">
-						<p>I expected to find that 7 was the most commonly answered number, but was surprised to discover 
-						that the most common was in fact 3.</p>
-					</section>
-					<div class="row">
-						<section class="text">
-						
-						</section>
-					</div>
 				</div>
 			</article>
 
 			<article>
-				<section class="text">
-					<p>More to come!</p>
-				</section>
+				<div class="inner">
+					<section class="text">
+							<h3>More to come!</h3>
+						<form id="form" onsubmit="submitForm(event)">
+							<label for="name">Name:</label><br>
+							<input type="text" id="name" name="name" placeholder="Billy" required>
+							<br>
+							<label for="email">Email Address:</label><br>
+							<input type="email" id="email" name="email" placeholder="A06742069@usu.edu" required>
+							<br>
+							<label for="idea">Your idea:</label><br>
+							<textarea id="idea" name="idea" placeholder="Do freshmen travel in packs? (provide details)" rows="7" cols="30" required></textarea>
+							<br>
+							<input type="submit" value="Submit">
+						</form>
+						<p id="responseMessage"></p>
+							<p class="formDesktop">
+								Do you have a hunch about some characteristic of USU students that you would be interested in confirming?
+								Submit your ideas for future investigations using this form!
+							</p>
+							<p class="formDesktop">
+								-Eli
+							</p>
+					</section>
+					<section class="center formMobile">
+						<p>
+							Do you have a hunch about some characteristic of USU students that you would be interested in confirming?
+							Submit your ideas for future investigations using this form!
+						</p>
+						<p>
+							-Eli
+						</p>
+					</section>
+				</div>
 			</article>
 		</div>
 		<footer class="main">
-			<p>© 2026 by Eli Glende | Last updated 10/5/26</p>
+			<p>© 2026 by Eli Glende | Last updated 10/7/26</p>
 		</footer>
 	</body>
 </html>
