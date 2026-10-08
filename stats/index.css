@@ -185,6 +185,8 @@ div.inner {
 	@media screen and (min-width: 767px) {
 		form {
 			margin-inline: 10vw;
+			margin-top: -4vh;
+			margin-bottom: 10px;
 			float: right;
 		}
 	}
