@@ -11,6 +11,7 @@ function submitForm(event) {
 		method: 'POST',
 		body: formData
 	})
+	// Display response from the server
 	.then(response => response.text())
 	.then(data => {
 		document.getElementById('responseMessage').innerText = data;
