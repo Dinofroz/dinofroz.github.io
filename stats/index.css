@@ -83,6 +83,7 @@ div.inner {
 /* Sections within articles */
 	section.text {
 		padding: 10px;
+		padding-right: 10px;
 	}
 
 	section.text h2 {
@@ -95,6 +96,7 @@ div.inner {
 
 	section.text img {
 		margin: 15px;
+		margin-right: 0px;
 		padding: 2px;
 		border-style: solid;
 		border-color: #a1a4a8;
@@ -122,6 +124,10 @@ div.inner {
 		width: 75vw;
 	}
 	
+	@media screen and (min-width: 400px) {
+		.mobile img { margin-right: 15px; }
+	}
+	
 	@media screen and (min-width: 767px) {
 		.mobile img { width: 65vw; }
 	}
@@ -134,9 +140,12 @@ div.inner {
 		.desktop { display: block; }
 		.mobile { display: none; }
 		section.image { grid-row-start: 1; grid-column-start: 2; }
-		section.text img { width: 35vw; float: right; }
+		section.text img { width: 35vw; float: right; margin-right: 0px;}
 	}
 
+	@media screen and (min-width: 1300px) {
+		section.text img { margin-right: 15px; }
+	}
 
 /* Form */
 	form {
@@ -167,13 +176,15 @@ div.inner {
 			display: block;
 		}
 		
-		form { float: right; }
+		form { 
+			float: right; 
+			margin-top: -3.5vh;
+		}
 	}
 	
 	@media screen and (min-width: 767px) {
 		form {
 			margin-inline: 10vw;
-			margin-top: -5vh;
 			float: right;
 		}
 	}
@@ -195,6 +206,7 @@ div.inner {
 	}
 	
 	input[type=submit] {
+		margin-top: 5px;
 		padding: 5px;
 		font-family: Helvetica, Arial;
 		font-weight: bold;
