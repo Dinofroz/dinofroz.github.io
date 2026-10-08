@@ -133,16 +133,20 @@ div.inner {
 	@media screen and (min-width: 992px) {
 		.desktop { display: block; }
 		.mobile { display: none; }
-		section.image { grid-row-start: 1; grid-column-start: 2; }
 		section.text img { width: 35vw; float: right; }
 	}
 
 
 /* Form */
 	form {
-		padding-inline: 0vw;
+		padding: 10px;
 		margin-top: 0vh;
-		padding-inline: 5vw;
+		margin-inline: 5vw;
+		border-style: solid;
+		border-width: 2px;
+		border-radius: 5px;
+		border-color: #8b96a2;
+		background-color: #c2c8cf;
 	}
 
 	.formMobile {
@@ -153,7 +157,7 @@ div.inner {
 		display: none;
 	}
 	
-	@media screen and (min-width: 537px) {
+	@media screen and (min-width: 540px) {
 		.formMobile {
 			display: none;
 		}
@@ -167,7 +171,7 @@ div.inner {
 	
 	@media screen and (min-width: 767px) {
 		form {
-			padding-inline: 10vw;
+			margin-inline: 10vw;
 			margin-top: -5vh;
 			float: right;
 		}
