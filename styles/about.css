@@ -182,3 +182,7 @@ footer {
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: backwards;
 }
+
+footer p {
+	color: #5e6c84;
+}
