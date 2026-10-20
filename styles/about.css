@@ -47,11 +47,8 @@ nav {
 	background: rgb(33,33,33,0);
 	padding-top: 9px;
 	transition: background 0.3s, box-shadow 0.3s, height 0.3s, padding-top 0.3s;
-	animation-name: fadeIn1;
-	animation-duration: 0.5s;
-	animation-timing-function: ease-in-out;
-	animation-fill-mode: backwards;
-	animation-delay: 0.25s;
+	transition-duration: 0.5s;
+	z-index: 1;
 }
 
 nav ul{
@@ -60,6 +57,11 @@ nav ul{
 	margin-top: 6px;
 	justify-content: center;
 	padding-left: 0;
+	animation-name: fadeIn1;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: backwards;
+	animation-delay: 0.25s;
 }
 
 @media screen and (min-width: 767px){
@@ -91,6 +93,7 @@ nav.scrolled {
 	background: rgba(33,33,33,1);
 	box-shadow: -3px 5px 20px rgba(43,42,42,0.85);
 	transition: background 0.3s, box-shadow 0.4s, height 0.3s, padding-top 0.3s;
+	transition-duration: 0.5s;
 }
 
 nav.scrolled a {
@@ -140,6 +143,7 @@ h1 {
 	font-size: 50pt;
 	text-align: center;
 	margin: 0px;
+	z-index: 0;
 }
 
 @media screen and (min-width: 767px){
