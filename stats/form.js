@@ -17,5 +17,6 @@ function submitForm(event) {
 	
 	// Update success message
 	document.getElementById('success').innerText = 'Thank you!';
+	document.getElementById('idea').value = '';
 	
 }
