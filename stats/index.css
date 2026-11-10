@@ -52,6 +52,7 @@ div.inner {
 	background: rgba(255,255,255,0.6);
 	border-radius: 3px;
 	display: inline-grid;
+	width: 100%;
 }
 
 
@@ -187,6 +188,7 @@ div.inner {
 			margin-inline: 10vw;
 			margin-top: -4vh;
 			margin-bottom: 10px;
+			float: right;
 			float: right;
 		}
 	}
