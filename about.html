@@ -8,13 +8,31 @@
     <link rel="stylesheet" href="/styles/about.css">
     <title>About</title>
 	<script>
-		document.addEventListener('DOMContentLoaded', () => {
+				document.addEventListener('DOMContentLoaded', () => {
 			const nav = document.getElementById('navbar');
 			function onScroll() {
-				if (window.scrollY > 60) {
-					nav.classList.add('scrolled');
+				let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+				if (vh < 550) {
+					if (window.scrollY > 20) {
+						nav.classList.add('scrolled');
+						console.log('20')
+					} else {
+						nav.classList.remove('scrolled');
+					}
+				} else if (vh < 700) {
+					if (window.scrollY > 39) {
+						nav.classList.add('scrolled');
+						console.log('39')
+					} else {
+						nav.classList.remove('scrolled');
+					}
 				} else {
-					nav.classList.remove('scrolled');
+					if (window.scrollY > 60) {
+						nav.classList.add('scrolled');
+						console.log('60')
+					} else {
+						nav.classList.remove('scrolled');
+					}
 				}
 			}
 			window.addEventListener('scroll', onScroll, { passive: true });
