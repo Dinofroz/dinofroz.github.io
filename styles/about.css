@@ -34,6 +34,12 @@ body {
 	height: 100vh;
 }
 
+.center {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
 
 /*			  */
 /* Navigation */
@@ -171,9 +177,53 @@ h1 {
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: backwards;
 }
+	
+.photo {
+	border-radius: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: 50%;
+	object-fit: cover;
+	box-shadow: -3px 5px 20px rgba(50,50,50,0.7);
+	animation-name: fadeIn2;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: backwards;
+}
+
+.desktop { 
+	display: none;
+}
+
+.mobile { 
+	display: block;
+}
+
+.mobile img {
+	width:96%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+@media screen and (min-width: 767px){
+	.desktop { display: flex; }
+	.mobile { display: none; }
+}
+
+h2 {
+	font-family: Lato;
+	/*font-weight: 100;*/
+}
+
+.content p {
+	font-family: Helvetica;
+	font-size: 14pt;
+	font-weight: 10%;
+}
+
 
 footer {
-	color: #212121;
 	margin: 15px;
 	text-align: center;
 	font-size: 10pt;
