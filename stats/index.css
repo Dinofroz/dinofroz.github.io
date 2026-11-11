@@ -57,13 +57,13 @@ div.inner {
 
 
 /* Adjust layout for desktop */
-	a.desktop {
+	span.desktop {
 		display: none;
 		color: #212121;
 		padding: 10px;
 	}
 
-	a.mobile {
+	span.mobile {
 		padding: 10px;
 		display: block;
 		color: #4f5f6f;
@@ -73,8 +73,8 @@ div.inner {
 	
 	@media screen and (min-width: 767px) {
 		.main { margin-inline: 10vw; }
-		a.desktop { display: block; }
-		a.mobile { display: none; }
+		span.desktop { display: block; }
+		span.mobile { display: none; }
 		.title h1 { margin: 0.5em; }
 		article { margin: 10px; }
 		div.container { padding: 10px; }
@@ -217,12 +217,14 @@ div.inner {
 		border-style: solid;
 		border-width: 1px;
 		border-color: #525456;
+		transition: background-color: 0.3s, border-color: 0.3s;
 	}
 
 	input[type=submit]:hover {
 		background-color: #525456;
 		color: rgb(250,250,250);
 		cursor: pointer;
+		transition: background-color: 0.3s, border-color: 0.3s;
 	}
 	
 	input[type=submit]:active {
@@ -262,12 +264,34 @@ h2 {
 	font-family: Candara, Helvetica, Arial;
 	color: black;
 }
+
+h2.mobile {
+	margin-top: 10px;
+}
 	
-h3{
+h3 {
 	text-align: left;
 	padding-left: 10px;
 	font-size: 20;
 	font-family: Helvetica, Arial;
+}
+
+h6.desktop {
+	text-align: left;
+	margin-top: -6em;
+	padding-left: 10px;
+	font-family: Helvetica, Arial;
+	color: #999999;
+	float: left;
+}
+
+h6.mobile {
+	text-align: left;
+	padding-left: 10px;
+	margin: 0px;
+	margin-top:10px;
+	font-family: Helvetica, Arial;
+	color: #999999;
 }
 
 footer {
